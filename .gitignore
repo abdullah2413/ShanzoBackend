@@ -1,0 +1,28 @@
+# --- Dependencies (install separately in each workspace) ---
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# --- Backend environment (never commit secrets) ---
+backend/.env
+
+# --- Environment / secrets (NEVER commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Backend runtime artefacts ---
+backend/server/tmp/
+.mail-out/
+*.log
+logs/
+npm-debug.log*
+
+# --- Editor / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Vercel ---
+.vercel
